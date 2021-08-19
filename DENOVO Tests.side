@@ -1,0 +1,222 @@
+{
+  "id": "fbde0c75-5511-458e-8acf-c029114fe20a",
+  "version": "2.0",
+  "name": "DENOVO Tests",
+  "url": "https://my.denovo.ua",
+  "tests": [{
+    "id": "fa6915f2-0327-4bf0-8ee7-58cf4b2974b9",
+    "name": "Test Initial Login",
+    "commands": [{
+      "id": "b5d4c4fb-fbc0-4404-8666-6b8bae3291f0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "774962cf-1e4d-4026-9ba2-8a83d3c4d748",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1521x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "780122fa-8b4f-4252-97d6-863cb7a8ad89",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputUsername",
+      "targets": [
+        ["id=inputUsername", "id"],
+        ["name=username", "name"],
+        ["css=#inputUsername", "css:finder"],
+        ["xpath=//input[@id='inputUsername']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "P.molodec.1@gmail.com"
+    }, {
+      "id": "c1eb64d1-e49c-4866-a48a-2d27cfc66164",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=password", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9ea47b1-8e28-4ba0-bdbe-a6186644bd7e",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=password", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "Заказчик"
+    }, {
+      "id": "85e754f4-9da4-4a16-b50a-fb47c3c98266",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Увійти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da2b68ad-d10c-41a3-b253-8e0c9b51bf39",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputCode",
+      "targets": [
+        ["id=inputCode", "id"],
+        ["name=code", "name"],
+        ["css=#inputCode", "css:finder"],
+        ["xpath=//input[@id='inputCode']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "4525"
+    }, {
+      "id": "b56c697a-e9da-4316-ab52-878a78a1e2fc",
+      "comment": "",
+      "command": "click",
+      "target": "id=MainHeaderSchemaCaptionValueLabel",
+      "targets": [
+        ["id=MainHeaderSchemaCaptionValueLabel", "id"],
+        ["css=#MainHeaderSchemaCaptionValueLabel", "css:finder"],
+        ["xpath=//label[@id='MainHeaderSchemaCaptionValueLabel']", "xpath:attributes"],
+        ["xpath=//div[@id='caption']/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Головна сторінка')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc91c6d7-759c-4dd5-bfaa-a25b24e33e77",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=MainHeaderSchemaCaptionValueLabel",
+      "targets": [
+        ["id=MainHeaderSchemaCaptionValueLabel", "id"],
+        ["css=#MainHeaderSchemaCaptionValueLabel", "css:finder"],
+        ["xpath=//label[@id='MainHeaderSchemaCaptionValueLabel']", "xpath:attributes"],
+        ["xpath=//div[@id='caption']/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Головна сторінка')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c029e52b-b68e-4213-a44b-0599c0fbe963",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=MainHeaderSchemaCaptionValueLabel",
+      "targets": [
+        ["id=MainHeaderSchemaCaptionValueLabel", "id"],
+        ["css=#MainHeaderSchemaCaptionValueLabel", "css:finder"],
+        ["xpath=//label[@id='MainHeaderSchemaCaptionValueLabel']", "xpath:attributes"],
+        ["xpath=//div[@id='caption']/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Головна сторінка')]", "xpath:innerText"]
+      ],
+      "value": "Головна сторінка"
+    }, {
+      "id": "1723837b-c4f4-49f9-a783-41d59e77934f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t-btn-style-green",
+      "targets": [
+        ["css=.t-btn-style-green", "css:finder"],
+        ["xpath=//div[@id='new_buttons']/a/div", "xpath:idRelative"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b14e9009-6b0b-4ed2-877a-e5626f35b634",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Створити заявку",
+      "targets": [
+        ["linkText=Створити заявку", "linkText"],
+        ["css=.button_green-add", "css:finder"],
+        ["xpath=//div[@id='app']/main/div/section/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://cabinet.my.denovo.ua/applications/create')]", "xpath:href"],
+        ["xpath=//section/div/div/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Створити заявку')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c161587b-8a10-4f79-b228-e3c55157e05a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_item:nth-child(1) span",
+      "targets": [
+        ["css=.header_item:nth-child(1) span", "css:finder"],
+        ["xpath=//div[@id='app']/main/header/div/div/div[2]/div/a/span", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Документація')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9918",
+      "windowTimeout": 2000
+    }, {
+      "id": "3f2689e9-26e8-4454-8e7f-8278553b26bd",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9918}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8150f8c-bd18-4499-afc5-f3864bade644",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.face_title",
+      "targets": [
+        ["css=.face_title", "css:finder"],
+        ["xpath=//div[@id='app']/main/section/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9cb2f02-69fa-4a30-8ab2-b455d9f7435d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.face_title",
+      "targets": [
+        ["css=.face_title", "css:finder"],
+        ["xpath=//div[@id='app']/main/section/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "ДОКУМЕНТАЦІЯ DE NOVO"
+    }, {
+      "id": "c5808a4e-d358-43fa-b9db-9184973ddf38",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Далі')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "431a99dc-3352-42b1-8e6c-4f3f8f3e97ec",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fa6915f2-0327-4bf0-8ee7-58cf4b2974b9"]
+  }],
+  "urls": ["https://my.denovo.ua/"],
+  "plugins": []
+}
